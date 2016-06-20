@@ -1,0 +1,10 @@
+TO-DO
+
+ok - Alterar favicon.ico
+ok - Alterar label das paginas
+ok - Consertar links do lattes em comite_cientifico.html
+ok - Criar localizacao.html e programacao.html
+ok - Consertar logos de apoio/suporte
+ok - Colocar logo do LNCC onde está LOGO
+ok - Consertar rodapé
+ok - Colocar vinculo na Home / Sobre

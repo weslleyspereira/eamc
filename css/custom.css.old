@@ -1,0 +1,70 @@
+body {
+	padding-top: 50px;
+	color: #959595;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	}
+	
+.feature {
+	background-color: #1E90FF;
+	color: #000080;
+	}
+	
+.article-intro {
+    margin-bottom: 25px;
+}
+
+.footer-blurb {
+    padding: 30px 0;
+    background-color: #222;
+    color: black;
+}
+    
+.footer-blurb-item {
+    padding: 30px;
+    }
+ 
+.small-print {
+	background-color: #fff;
+	padding: 30px 0;
+}
+
+.texto-box{
+	margin-left: 81%;
+	font-size: 93%;
+	font-weight: bold;
+}
+
+.fig-user{
+	width: 16px;
+	height: 16px;
+}
+
+.espaco{
+	height: 17px;
+}
+
+.logo-lncc{
+	width: 212px;
+	height: 100px;
+}
+
+.logo-eamc{
+	width: 340px;
+	height: 60px;
+}
+
+.fig-lncc{
+	width: 1353px;
+	height: 500px;
+}
+
+.fig-apoio{
+	width: 350px;
+	height: 150px;
+	padding-right: 100px;
+}
+
+
