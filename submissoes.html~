@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="X Encontro Acadêmico de Modelagem Computacional do LNCC - 1 a 3 de fevereiro de 2017 - Submissões">
 
-    <title>X EAMC</title>
+    <title>X EAMC - LNCC</title>
 <link rel="icon" 
       type="image/png" 
       href="figures/logo_eamc_mini.png">
@@ -97,11 +97,11 @@
             <div class="col-lg-12">
 			
 		<p>Tanto a submissão de resumos quanto a submissão de artigos completos será feita através do e-mail <i>x.eamc.2017@gmail.com</i>. O assunto do e-mail deve
-		seguir o padrão [Submissão EAMC - Área a qual está submetendo] e o nome do arquivo em pdf deve seguir [X-EAMC_nomeCompletoSemEspaco].
+		seguir o padrão [Submissão EAMC - Área a qual está submetendo] e o arquivo em pdf deve ser nomeado como [X-EAMC_nomeCompletoSemEspaco].
 		</p>
 		<p>
 			A submissão de resumos estará disponível até o dia 01 de agosto de 2016. O resumo deve ser apresentado no formato pdf, com 				
-			um limite de 2.500 caracteres e atender a uma das áreas do EAMC, para uma melhor descrição de cada área <a href="sobre.html">acesse aqui</a>, 
+			um limite de 2.500 caracteres e atender a uma das áreas do EAMC. Para uma melhor descrição de cada área <a href="sobre.html">acesse aqui</a>, 
 			são elas:
 			<br /><br />
 			
@@ -116,7 +116,7 @@
 		<br /> 
 		<p>
 			Autores com o resumo aceito são convidados a submeter trabalhos completos (5 a 7 páginas) para serem publicados nos
-			anais do congresso. O template para uso encontra-se: <a href="template_tex.zip">[template_tex]</a>. <br />
+			anais do congresso. O template do trabalho encontra-se em: <a href="template_tex.zip">[template_tex]</a>. <br />
 			Todos os trabalhos completos serão analisados sob a responsabilidade do Comitê Científico. A submissão de artigos completos 				terá início dia 15 de agosto e irá até o dia 30 de setembro de 2016.
 			<br />
 
