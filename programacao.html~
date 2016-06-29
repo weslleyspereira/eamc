@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="X Encontro Acadêmico de Modelagem Computacional do LNCC - 1 a 3 de fevereiro de 2017 - Programação">
 
     <title>X EAMC</title>
 <link rel="icon" 
@@ -56,6 +57,7 @@
 				<li><a href="comite_organizador.html">Comitê Organizador</a></li>
 				<li><a href="comite_cientifico.html">Comitê Científico</a></li>
 				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="eamc_2017_cartaz.pdf">Cartaz</a></li>
 			</ul>
 		    </li>
 		    <li>
