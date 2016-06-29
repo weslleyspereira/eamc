@@ -160,3 +160,12 @@ figcaption {
 .construcao{
 	background-image: url("under_construction.png");
 }
+
+.box-hotel {
+    border: 2px solid gray;
+    display: inline-block;
+    margin-bottom: 55px;
+    margin-right: 80px;
+    padding: 25px;
+    width: 469px;	
+}
