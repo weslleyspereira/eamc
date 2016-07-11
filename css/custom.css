@@ -169,3 +169,15 @@ figcaption {
     padding: 25px;
     width: 469px;	
 }
+
+.box-inscricao {
+    background: #222222 none repeat scroll 0 0;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 55px;
+    margin-right: 80px;
+    padding: 25px;
+    width: 296px;	
+}
