@@ -155,7 +155,7 @@ figcaption {
 .new-col-sm-4{width:33.33333%; float: left; position:relative;min-height:1px; margin-left: 110px;}
 .new-col-sm-4{width:33.33333%; float: left; position:relative;min-height:1px;}
 
-.new-jumbotron{padding-top:30px;padding-bottom:30px;margin-bottom:30px;color:#000080;background-color:#1e90ff}.new-jumbotron .h1,.new-jumbotron h1{color:inherit}.new-jumbotron p{margin-bottom:15px;font-weight:200}.jumbotron>hr{border-top-color:#d5d5d5}.container .new-jumbotron,.container-fluid .new-jumbotron{border-radius:6px}.new-jumbotron .container{max-width:100%}@media screen and (min-width:768px){.new-jumbotron{padding-top:35px;padding-bottom:35px}.container .new-jumbotron,.container-fluid .new-jumbotron{padding-right:60px;padding-left:60px}.new-jumbotron .h1,.new-jumbotron h1{font-size:63px}}
+.new-jumbotron{padding-top:30px;padding-bottom:30px;margin-bottom:30px;color:#999999;;background-color:#000080;}.new-jumbotron .h1,.new-jumbotron h1{color:inherit}.new-jumbotron p{margin-bottom:15px;font-weight:200}.jumbotron>hr{border-top-color:#d5d5d5}.container .new-jumbotron,.container-fluid .new-jumbotron{border-radius:6px}.new-jumbotron .container{max-width:100%}@media screen and (min-width:768px){.new-jumbotron{padding-top:35px;padding-bottom:35px}.container .new-jumbotron,.container-fluid .new-jumbotron{padding-right:60px;padding-left:60px}.new-jumbotron .h1,.new-jumbotron h1{font-size:63px}}
 
 .construcao{
 	background-image: url("under_construction.png");
