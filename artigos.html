@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="X Encontro Acadêmico de Modelagem Computacional do LNCC - 1 a 3 de fevereiro de 2017 - Página inicial">
+
+    <title>X EAMC - LNCC</title>
+    <link rel="icon" href="favicon.ico" type="figures/logo_eamc_mini.png"/>
+<link rel="icon" 
+      type="image/png" 
+      href="figures/logo_eamc_mini.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    <script language="JavaScript" src="js/slideshow.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+	function setaImagem(){
+	    var settings = {
+        	primeiraImg: function(){
+	 	       elemento = document.querySelector("#slider a:first-child");
+         	       elemento.classList.add("ativo");
+		       this.legenda(elemento);
+        	},
+ 
+        	slide: function(){
+            		elemento = document.querySelector(".ativo");
+ 
+      	                if(elemento.nextElementSibling){
+		                elemento.nextElementSibling.classList.add("ativo");
+                		settings.legenda(elemento.nextElementSibling);
+                		elemento.classList.remove("ativo");
+		        }else{
+                		elemento.classList.remove("ativo");
+		                settings.primeiraImg();
+            		}
+ 
+	        },
+ 
+        	proximo: function(){
+            		clearInterval(intervalo);
+            		elemento = document.querySelector(".ativo");
+ 
+            		if(elemento.nextElementSibling){
+                		elemento.nextElementSibling.classList.add("ativo");
+		                settings.legenda(elemento.nextElementSibling);
+                		elemento.classList.remove("ativo");
+		        }else{
+                		elemento.classList.remove("ativo");
+         		        settings.primeiraImg();
+            		}
+            		intervalo = setInterval(settings.slide,4000);
+        	},
+ 
+        anterior: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+ 
+            if(elemento.previousElementSibling){
+                elemento.previousElementSibling.classList.add("ativo");
+                settings.legenda(elemento.previousElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");						
+                elemento = document.querySelector("a:last-child");
+                elemento.classList.add("ativo");
+                this.legenda(elemento);
+            }
+            intervalo = setInterval(settings.slide,4000);
+        },
+ 
+        legenda: function(obj){
+            var legenda = obj.querySelector("img").getAttribute("alt");
+            document.querySelector("figcaption").innerHTML = legenda;
+        }
+ 
+    }
+ 
+    //chama o slide
+    settings.primeiraImg();
+ 
+    //chama a legenda
+    settings.legenda(elemento);
+ 
+    //chama o slide à um determinado tempo
+    var intervalo = setInterval(settings.slide,5000);
+    document.querySelector(".next").addEventListener("click",settings.proximo,false);
+    document.querySelector(".prev").addEventListener("click",settings.anterior,false);
+}
+ 
+window.addEventListener("load",setaImagem,false);
+</script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.lncc.br">
+                	<img src="figures/logo_lncc2.png" style="width: 110px; height: 49px; margin-top: -13%"/>
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apresentação <span class="caret"></span></a>
+			<ul class="dropdown-menu" aria-labelledby="about-us">
+				<li><a href="comite_organizador.html">Comitê Organizador</a></li>
+				<li><a href="comite_cientifico.html">Comitê Científico</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="eamc_2017_cartaz.pdf">Cartaz</a></li>
+			</ul>
+		    </li>
+		    <li>
+                        <a href="programacao.html">Programação</a>
+                    </li>
+		    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Local<span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="about-us">
+                    <li><a href="localizacao.html">Localização</a></li>
+                    <li><a href="hotel_transporte.html">Transporte e Hospedagem</a></li>
+                </ul>
+		    </li>
+                    <li>
+                        <a href="datas_importantes.html">Datas Importantes</a>
+                    </li>
+		    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Submissão<span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="about-us">
+                    <li><a href="submissoes.html">Submissões</a></li>
+                    <li><a href="premiacao.html">Premiação</a></li>
+                </ul>
+		    </li>
+                    <li>
+                        <a href="http://lncc.br/eventoSeminario/eventoconsultar.php?vMenu=4&idt_evento=1617" target="_blank">Inscrições</a>
+                    </li>
+                    <li>
+                        <a href="artigos.html">Artigos Publicados</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<div class="new-jumbotron feature">
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-equalizer"></span> Artigos Publicados</h1>
+			<p class="texto-box"><a href="index.html" style="color: #999999">Home</a> / Artigos Publicados</p>
+		</div>
+	</div>
+    <!-- Content -->
+    <div class="container">
+	<!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th style="width:201px;"><center>Autor-Apresentador</center></th>
+                        <th><center>Artigo</center></th>
+                        <th style="width:317px;"><center>Área</center></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><center>Anna Claudia Resende</center></td>
+                        <td><center>Modelagem de Sinalização Intracelular</center></td>
+                        <td><center>Modelagem Computacional de Circulação e Transporte</center></td>
+                        <td><center><a href="2017/X-EAMC_AnnaClaudiaResende.pdf" target="_blank"><img style="width:27px;
+                        height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Bernardo Costa*</center></td>
+                        <td><center>Modelagem e Análise da Malha Aérea Doméstica Brasileira com Grafos MultiAspectos (MAGs)</center></td>
+                        <td><center>Computacional Científica</center></td>
+                        <td><center><a href="2017/X-EAMC_BernardoCosta.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Cinthia Lopes</center></td>
+                        <td><center>A Derivada Topológica Aplicada em Problemas Inversos e de Otimização Topológica</center></td>
+                        <td><center>Modelagem Computacional de Problemas de Equilíbrio e Otimização</center></td>
+                        <td><center><a href="2017/X-EAMC_CinthiaLopes.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Daniel Luna</center></td>
+                        <td><center>Desenvolvimento de uma Ferramenta para Geração Automática de um Banco de Dados com
+                        Base em Sistema Mecânico Simulado para Treinamento de uma Deep Neural Network (DNN)</center></td>
+                        <td><center>Computação Científica</center></td>
+                        <td><center><a href="2017/X-EAMC_DanielLuna.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Daniel Ramos</center></td>
+                        <td><center>Um Modelo para Avaliação de Desempenho de Plataformas de Processamento de Grafos</center></td>
+                        <td><center>Computacional Científica</center></td>
+                        <td><center><a href="2017/X-EAMC_DanielRamos.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Felipe Siconha*</center></td>
+                        <td><center>Avaliação de Funções Empíricas de Scoring em Experimentos de Triagem Virtual em
+                        Larga Escala</center></td>
+                        <td><center>Modelagem Computacional de Biossistemas e Bioinformática</center></td>
+                        <td><center><a href="2017/X-EAMC_FelipeSiconha.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Gláucio Fonseca</center></td>
+                        <td><center>Prognóstico de Dano Estrutural Utilizando Ondas Guiadas Ultrassônicas</center></td>
+                        <td><center>Modelagem Computacional de Problemas de Equilíbrio e Otimização</center></td>
+                        <td><center><a href="2017/X-EAMC_GlaucioFonseca.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Gustavo Fatigate</center></td>
+                        <td><center>Um Estudo Comparativo de Simulação de Hipertermia com Nanopartículas Magnéticas</center></td>
+                        <td><center>Modelagem Computacional de Biossistemas e Bioinformática</center></td>
+                        <td><center><a href="2017/X-EAMC_GustavoFatigate.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Jemy Mandujano</center></td>
+                        <td><center>Determinação de Parâmetros com Distribuição Espacial Não Uniforme em um Modelo de Neurociência via o Método de Landweber Não Linear</center></td>
+                        <td><center>Modelagem Computacional de Problemas de Equilíbrio e Otimização</center></td>
+                        <td><center><a href="2017/X-EAMC_JemyMandujano.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Jonathas Ferreira</center></td>
+                        <td><center>Simulação Orientada a Objetos da Nucleação e Crescimento via Autômato Celular</center></td>
+                        <td><center>Computacional Científica</center></td>
+                        <td><center><a href="2017/X-EAMC_JonathasFerreira.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>José Fonseca</center></td>
+                        <td><center>Análise do Efeito da Precisão Finita no Algoritmo Adaptativo Sigmoidal</center></td>
+                        <td><center>Controle e Filtragem de Sistemas Dinâmicos</center></td>
+                        <td><center><a href="2017/X-EAMC_JoseFonseca.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Karina Baptista*</center></td>
+                        <td><center>Contact Assisted Protein Structure Prediction Using a Genetic Algorithm with Phenotypic Crowding</center></td>
+                        <td><center>Modelagem Computacional de Biossistemas e Bioinformática</center></td>
+                        <td><center><a href="2017/X-EAMC_KarinaBaptista.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Lucas dos Anjos</center></td>
+                        <td><center>Biological Control of a Pest in a Reaction-Diffusion Predator-Prey System with Allee Effect</center></td>
+                        <td><center>Controle e Filtragem de Sistemas Dinâmicos</center></td>
+                        <td><center><a href="2017/X-EAMC_LucasdosAnjos.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Tiene Filisbino</center></td>
+                        <td><center>Ranking Texture Features Through AdaBoost.M2 Linear Ensembles for Granite Tiles Classification</center></td>
+                        <td><center>Computacional Científica</center></td>
+                        <td><center><a href="2017/X-EAMC_TieneFilisbino.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Thiago Quinelato</center></td>
+                        <td><center>Métodos de Elementos Finitos Mistos para o Problema da Elasticidade Linear em Malhas de Quadriláteros</center></td>
+                        <td><center>Modelagem Computacional de Problemas de Equilíbrio e Otimização</center></td>
+                        <td><center><a href="2017/X-EAMC_ThiagoQuinelato.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                      <tr>
+                        <td><center>Vinícius Menezes</center></td>
+                        <td><center>Simulação Numérica do Tratamento Térmico de Austêmpera no Ferro Fundido Nodular</center></td>
+                        <td><center>Modelagem Computacional de Problemas de Equilíbrio e Otimização</center></td>
+                        <td><center><a href="2017/X-EAMC_ViniciusMenezes.pdf" target="_blank"><img style="width:27px; height: 27px;" src="figures/dw1.png" /></a></center></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top:5%;">*Os autores foram premiados nas categorias de Graduação, Mestrado e Doutorado, respectivamente, pela
+                melhor apresentação de trabalho.</p>
+                <div class="espaco" />
+
+            </div>
+        </div>
+        </div>
+        <!-- /.row -->
+
+    </div>	
+    <!-- /.container -->
+	
+	<footer>
+		<div class="footer-blurb">
+			<div class="container">
+				<div class="row"><center>
+					<div class="new-col-sm-4 footer-blurb-item">
+						<img src="figures/logo_lncc.png" class="logo-lncc" />
+					</div>
+					<div class="new-col-sm-4 footer-blurb-item">
+						<img src="figures/logo_eamc.png"  class="logo-eamc" />
+					</div>
+				</center>
+				</div>
+				<!-- /.row -->	
+
+			</div>
+		<center style="color: #999999">Laboratório Nacional de Computação Científica - LNCC<br />
+		Av. Getúlio Vargas, n. 333 - Quitandinha - CEP 25651-075 - Petrópolis-RJ - Tel.: +55 (24) 2233-6000.</center>
+        </div>
+	</footer>
+
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	
+</body>
+
+</html>
